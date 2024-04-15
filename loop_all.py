@@ -1,4 +1,4 @@
-from funs import pokevenn
+from helper_funs import pokevenn
 import pandas as pd
 import os, PIL
 from tqdm import tqdm
