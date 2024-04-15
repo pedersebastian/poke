@@ -1,12 +1,14 @@
-import PIL, os
-from PIL import Image
-import pytesseract, re
-import pandas as pd
-from PIL.ExifTags import TAGS
-import numpy as np 
+import PIL, os, pytesseract, re
 from PIL import Image, ImageDraw 
+import pandas as pd
+import numpy as np 
+from PIL.ExifTags import TAGS
 
 
+########################
+
+
+#### Hjelpefunksjoner
 def get_name(image):
     try:
         navn_coord = (50,150, 600,500)
@@ -181,7 +183,7 @@ def heat_fun_2(image):
     return out
 
 
-
+#### Hoved
 
 def pokevenn(path):
     im = Image.open(path)
